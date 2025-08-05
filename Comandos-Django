@@ -1,0 +1,31 @@
+Python e Django 
+
+1. Atualizar o sistema 
+
+sudo apt update && sudo apt upgrade 
+
+2. Instalar pip e venv (se necessário) 
+
+sudo apt install python3-pip python3.10-venv 
+
+3. Criar pasta e entrar nela 
+
+mkdir ~/meu_primeiro_projeto_django cd ~/meu_primeiro_projeto_django 
+
+4. Criar o ambiente virtual 
+
+python3 -m venv venv 
+
+5. Ativar o ambiente virtual 
+
+source venv/bin/activate 
+
+6. Instalar o Django 
+
+pip install django 
+
+7. Para desativar o ambiente
+
+deactivate
+
+ 
