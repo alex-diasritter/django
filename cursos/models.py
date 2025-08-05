@@ -17,8 +17,8 @@ class Curso(Base):
         verbose_name = 'Curso'
         verbose_name_plural = 'Cursos'
         
-        def __str__(self):
-            return self.titulo
+    def __str__(self):
+        return self.titulo
 
 class Avaliacao(Base):
     curso = models.ForeignKey(Curso, on_delete=models.CASCADE, related_name='avaliacoes')
@@ -32,6 +32,6 @@ class Avaliacao(Base):
         verbose_name_plural = 'Avaliações'
         unique_together = ('curso', 'email')
 
-        def __str__(self):
-            return f'{self.nome} avaliou o {self.curso} com nota {self.curso.titulo}'
+    def __str__(self):
+        return f'{self.nome} avaliou o {self.curso.titulo} com nota {self.avaliacao}'
 
